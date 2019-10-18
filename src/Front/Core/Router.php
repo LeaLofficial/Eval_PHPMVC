@@ -10,6 +10,13 @@ class Router
 			'controller' => 'controller.homepage',
 			'method' => 'index'
 		],
+
+		'#^/country$#' => [
+		//'#^/$#' => [
+			'controller' => 'controller.country',
+			'method' => 'index'
+
+		],
 	];
 
 	private $route = [

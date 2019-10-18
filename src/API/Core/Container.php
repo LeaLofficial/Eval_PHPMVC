@@ -30,6 +30,11 @@ class Container
 					$this->services['core.database']()
 				);
 			},
+			'controller.country' => function(){
+				return new \App\API\controller\CountryController(
+					$this->services['core.database']()
+				);
+			},
 
 		];
 
